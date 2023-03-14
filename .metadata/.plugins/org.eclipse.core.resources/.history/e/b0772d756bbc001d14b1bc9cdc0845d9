@@ -1,0 +1,13 @@
+package bytebank_heredado;
+
+public class TestFuncionario {
+	public static void main(String[] args) {
+		Funcionario daniel = new Funcionario();
+		daniel.setNombre("Daniel");
+		daniel.setDocumento("4345345");
+		daniel.setSalario(700);
+		
+		System.out.println(daniel.getNombre()+" "+ daniel.getDocumento()+" ");
+		System.out.println(daniel.getSalario());
+	}
+}

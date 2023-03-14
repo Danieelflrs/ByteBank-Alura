@@ -1,0 +1,32 @@
+package bytebank_heredado;
+
+public class TestFuncionario {
+	public static void main(String[] args) {
+		Funcionario daniel = new Funcionario();
+		Gerente jefeDaniel = new Gerente();
+		
+		daniel.setNombre("Daniel Flores");
+		daniel.setDocumento("4345345");
+		daniel.setTipoFuncionario(0);
+		daniel.setSalario(700);
+
+		jefeDaniel.setNombre("Oscar Fuentes");
+		jefeDaniel.setDocumento("4577894");
+		jefeDaniel.setTipoFuncionario(1);
+		jefeDaniel.setSalario(2000);
+		jefeDaniel.setClave("Unaclavemuyespecial");
+		boolean jefe  = jefeDaniel.iniciarSesion("Unaclavemuyespecial");
+		
+		System.out.print("Nombre: "+daniel.getNombre()+", Documento: "+ daniel.getDocumento()+", Salario: ");
+		System.out.println(daniel.getSalario());
+		System.out.println("Con la bonificación su salario es de: " + (daniel.getBonificacion() + daniel.getSalario()));
+	
+		if (jefe) {
+			System.out.println("Ha ingresado con exito");
+			System.out.print("Nombre: "+jefeDaniel.getNombre()+", Documento: "+ jefeDaniel.getDocumento()+", Salario: ");
+			System.out.println(jefeDaniel.getSalario());
+			System.out.println("Con la bonificación su salario es de: " + (jefeDaniel.getBonificacion() + jefeDaniel.getSalario()));
+			
+		}
+	}
+}

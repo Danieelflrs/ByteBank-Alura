@@ -1,0 +1,14 @@
+package bytebank_heredado;
+
+public class TestFuncionario {
+	public static void main(String[] args) {
+		Funcionario daniel = new Funcionario();
+		daniel.setNombre("Daniel");
+		daniel.setDocumento("4345345");
+		daniel.setSalario(700);
+		
+		System.out.print("Nombre: "+daniel.getNombre()+", Documento: "+ daniel.getDocumento()+", Salario: ");
+		System.out.println(daniel.getSalario());
+		System.out.println("Con la bonificación su salario es de: " + (daniel.getBonificacion() + daniel.getSalario()));
+	}
+}

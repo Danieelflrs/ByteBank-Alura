@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Danie\OneDrive\Escritorio\Daniel Docs\ONE\Java\Curso 2( POO )\Practicas\.metadata\.plugins\org.eclipse.jdt.core
+4217418853.index
+2805711536.index
+1865797976.index
